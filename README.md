@@ -8,12 +8,12 @@
         </ul>
     </div>
 <h2>¿Qué es un fondo?</h2>
-<div>
+<div style="text align: justify">
   <p>
   Se puede definir a un fondo como una alberca de dinero que es destinada para un propósito en específico. Ejemplos de ello, puede ser: 
   </p>
 </div>
-<div>
+<div >
     <ul>
         <li>Gobierno destinando dinero para la construcción de algún edificio nuevo.</li>
         <li>Una universidad reservando dinero para becas.</li>
@@ -21,7 +21,7 @@
     </ul>
 </div>
 <h2>¿Qué es un ETF?</h2>
-<div>
+<div style="text align: justify">
   <p>
   Por sus siglas en inglés este es exchange-traded fund, es un tipo de fondo de inversiones. Estos suelen ser cambiados en intercambios de acciones de una empresa. Son similares a fondos mutuos, la diferencia es que los ETFs son vendidos y comprados de otros dueños durante los días de intercambios de acciones, cuando los fondos mutuos son comprados y vendidos del vendedor de acuerdo a cómo está su precio al final del día.
   </p>
