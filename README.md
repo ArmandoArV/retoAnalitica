@@ -1,4 +1,4 @@
-    <h1>Reto analítica</h1>
+<h1>Reto analítica</h1>
     <div>
         <ul>
             <li>Josué Daniel Bahena Panécatl</li>
