@@ -36,3 +36,10 @@
   En finanzas, un bono es un tipo de seguridad mediante el cual un individuo, tiene una deuda hacia otro usuario, y es obligado a cubrir esta deuda dependiendo de los términos que le fueron puestos en un inicio.
   </p>
 </div>
+<h2>Referencias:</h2>
+<div>
+  <p>
+  ELGUN ISGANDARLI. (2022). Government Bonds, ETFs and Funds. mayo 10, 2022, de kaggle Sitio web: https://www.kaggle.com/datasets/elgunisgandarli/government-bonds-etfs-and-funds
+  </p>
+</div>
+
