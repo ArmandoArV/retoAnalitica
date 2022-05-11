@@ -12,9 +12,8 @@ def StadistaP():
     # Dataframe
     PriceUSA = usa['Price'] # Dataframe for the price
     ChangeUSA = usa['Change %'] # Dataframe for the Change in percentage
-
+    DatesUSA = usa['Date']
     # Some statistics stuff
-
     # Change
     AvChange = ChangeUSA.mean()
     MAXChange = np.max(ChangeUSA)
