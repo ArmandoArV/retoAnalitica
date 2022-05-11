@@ -12,13 +12,12 @@ import statistics as stat
 usa = pd.read_csv(r"DB\United States 10-Year Bond Yield.csv")
 
 # United States
-# print(usa) # Here we simply print the csv
-# print(usa.head(6)) # Here we take the very first 5 rows of data
+print(usa) # Here we simply print the csv
+print(usa.head(6)) # Here we take the very first 5 rows of data
 
 # Dataframe
 PriceUSA = usa['Price'] # Dataframe for the price
 ChangeUSA = usa['Change %'] # Dataframe for the Change in percentage
-# print(PriceUSA)
 
 # Some statistics stuff
 
