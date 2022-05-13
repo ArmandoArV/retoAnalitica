@@ -5,4 +5,7 @@
     affect the economy in Mexico.
     
 """
-from StatistaP import 
+from regresion import *
+
+if __name__ == "__main__":
+    main()

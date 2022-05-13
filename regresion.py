@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from StatistaP import *
+from StatistaP import PriceUSA
+from StatistaP import ChangeUSA
 
 x=ChangeUSA
 y=PriceUSA
