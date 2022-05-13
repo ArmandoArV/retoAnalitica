@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import statistics as stat
+import statsmodels.api as sm 
 
 usa = pd.read_csv(r"DB\United States 10-Year Bond Yield.csv")
 cseven = pd.read_excel(r"DB\7anios.xlsx")
@@ -18,6 +19,9 @@ DatesUSA = usa['Date']
 PriceOF = cfive['Price']
 ChangeOF = cfive['Change %']
 DatesOF = cfive['Date']
+
+PriceSIX = csix['Price']
+
 # Some statistics stuff
 # Change
 AvChange = ChangeUSA.mean()
@@ -30,8 +34,15 @@ SUMChange = np.sum(ChangeUSA)
 (unique, counts) = np.unique(ChangeUSA, return_counts=True)
 Changefrequencies = np.asarray((unique, counts)).T
 
+X = usa[["Low","High"]]
+y = usa["Price"]
+X = sm.add_constant(X)   # se agrega la intercepción, la ordenada al origen (beta_0) el modelo
 
+modelo = sm.OLS(y, X).fit()
 
+predictions = modelo.predict(X)  # Con el modelo, se calculan las Y´s
+print("_______________________________________-")
+print(modelo.summary())
     # Price
 AvPrice = np.average(PriceUSA)
 MAXPrice = np.max(PriceUSA)
@@ -65,7 +76,8 @@ print("Range of the change column:",RanChange)
 print("Variance of the change column: ",VarChange)
 print("Mode of the change column: ",ModChange)
 print("SUM of the change column: ",SUMChange)
-print("Change frequency : ",Changefrequencies)
 print(" ")
+print("Change frequency : ",Changefrequencies)
+
 
 
