@@ -3,6 +3,9 @@ import numpy as np
 import statistics as stat
 
 usa = pd.read_csv(r"DB\United States 10-Year Bond Yield.csv")
+cseven = pd.read_excel(r"DB\7anios.xlsx")
+csix = pd.read_excel(r"DB\6anios.xlsx")
+cfive = pd.read_excel(r"DB\5anios.xlsx")
     # United States
     #print(usa) # Here we simply print the csv
     #print(usa.head(6)) # Here we take the very first 5 rows of data
@@ -11,6 +14,10 @@ usa = pd.read_csv(r"DB\United States 10-Year Bond Yield.csv")
 PriceUSA = usa['Price'] # Dataframe for the price
 ChangeUSA = usa['Change %'] # Dataframe for the Change in percentage
 DatesUSA = usa['Date']
+
+PriceOF = cfive['Price']
+ChangeOF = cfive['Change %']
+DatesOF = cfive['Date']
 # Some statistics stuff
 # Change
 AvChange = ChangeUSA.mean()
