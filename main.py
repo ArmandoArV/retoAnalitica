@@ -5,5 +5,4 @@
     affect the economy in Mexico.
     
 """
-from StatistaP import StadistaP
-StadistaP()
+from StatistaP import 
