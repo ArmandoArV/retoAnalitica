@@ -20,6 +20,11 @@ RanChange = MAXChange-MINChange
 VarChange = stat.variance(ChangeUSA)
 ModChange = stat.mode(ChangeUSA)
 SUMChange = np.sum(ChangeUSA)
+(unique, counts) = np.unique(ChangeUSA, return_counts=True)
+Changefrequencies = np.asarray((unique, counts)).T
+
+
+
     # Price
 AvPrice = np.average(PriceUSA)
 MAXPrice = np.max(PriceUSA)
@@ -53,6 +58,7 @@ print("Range of the change column:",RanChange)
 print("Variance of the change column: ",VarChange)
 print("Mode of the change column: ",ModChange)
 print("SUM of the change column: ",SUMChange)
+print("Change frequency : ",Changefrequencies)
 print(" ")
 
 
