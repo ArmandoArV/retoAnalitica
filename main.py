@@ -6,6 +6,7 @@
     
 """
 from regresion import *
+from graphs import *
 
 if __name__ == "__main__":
     main()

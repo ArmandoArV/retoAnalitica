@@ -43,5 +43,3 @@ def main():
     print("Coeffs:\nb_0 = {}  \
           \nb_1 = {}".format(b[0], b[1]))
     graph_reg(x, y, b)
-if __name__ == "__main__":
-    main()
