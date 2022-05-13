@@ -14,22 +14,29 @@ plt.style.use('grayscale')   # https://matplotlib.org/3.5.0/gallery/style_sheets
 
 
 x = DatesUSA
-y = PriceUSA
-y1 = ChangeUSA
+y1 = PriceUSA
+y2 = ChangeUSA
 
 ex1 = DatesOF
 ye1 = PriceOF
-
-plt.plot(x,y)
-plt.xlabel("Fechas de 2005 a 2008")
-plt.ylabel("Costos")
-plt.xlim(500,50)
-plt.title("BAJA CON RESPECTO A LOS COSTOS DE 2009 - 2008")
-plt.show()
 
 plt.plot(x,y1)
 plt.xlabel("Fechas de 2005 a 2008")
 plt.ylabel("Costos")
 plt.xlim(500,50)
 plt.title("BAJA CON RESPECTO A LOS COSTOS DE 2009 - 2008")
+plt.show()
+
+plt.plot(x,y2)
+plt.xlabel("Fechas de 2005 a 2008")
+plt.ylabel("Costos")
+plt.xlim(500,50)
+plt.title("BAJA CON RESPECTO A LOS COSTOS DE 2009 - 2008")
+plt.show()
+
+plt.subplot(221) 
+plt.plot(x, y1, y2)
+plt.xlabel("Fechas")
+plt.ylabel("Precios")
+plt.title("Precios")
 plt.show()
