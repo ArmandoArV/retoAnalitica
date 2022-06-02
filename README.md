@@ -1,12 +1,5 @@
 <h1>Reto analítica</h1>
-    <div>
-        <ul>
-            <li>Armando Arredondo Valle</li>
-            <li>Josué Daniel Bahena Panécatl</li>
-            <li>Daniel de Luna Díaz</li>
-            <li>Aldo Olascoaga Olmedo</li>
-        </ul>
-    </div>
+
 <h3>Link a la base de datos:</h3>
 <div>
     <p>https://www.kaggle.com/datasets/elgunisgandarli/government-bonds-etfs-and-funds</p>
